@@ -197,7 +197,7 @@ const modelo = () => {
     usuario.telefone = Number(
       prompt("Insira o telefone do usuário: ").replaceAll(",", ".")
     );
-    if (usuario.telefone <= 0 || isNaN(usuario.telefone)) {
+    if (usuario.telefone <= 0 && isNaN(usuario.telefone)) {
       console.log("O telefone é inválido");
     } else {
       break;
